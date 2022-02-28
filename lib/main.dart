@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        foregroundColor: Colors.deepPurple,
+        foregroundColor: Colors.black,
       ),
       body: Center(
         child: Column(
@@ -66,25 +66,27 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               //style: Theme.of(context).textTheme.headline1,
-              style: const TextStyle(color: Colors.green, fontSize: 24),
+              style: const TextStyle(color: Colors.green, fontSize: 23),
             ),
-            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+            Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
               ElevatedButton(
                 onPressed: _decrementCounter,
                 child: const Text("-",
-                    style: TextStyle(color: Colors.black, fontSize: 20)),
+                    style: TextStyle(color: Colors.black, fontSize: 21)),
                 style: ElevatedButton.styleFrom(primary: Colors.red),
               ),
               ElevatedButton(
                   onPressed: _incrementCounter,
                   style: ElevatedButton.styleFrom(primary: Colors.green),
                   child: const Text("+",
-                      style: TextStyle(color: Colors.black, fontSize: 20)))
+                      style: TextStyle(color: Colors.black, fontSize: 21)))
             ]),
 
             ElevatedButton(onPressed: _clearCounter,
               child: const Text("Сбросить",
-                  style: TextStyle(color: Colors.grey, fontSize: 16)),
+                  style: TextStyle(color: Colors.grey, fontSize: 17)),
               style: ElevatedButton.styleFrom(primary: Colors.white),),
           ],
         ),
