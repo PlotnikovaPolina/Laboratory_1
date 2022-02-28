@@ -61,30 +61,30 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'Значение инкремента:',
-              style: TextStyle(color: Colors.green, fontSize: 26),
+              style: TextStyle(color: Colors.green, fontSize: 24),
             ),
             Text(
               '$_counter',
               //style: Theme.of(context).textTheme.headline1,
-              style: const TextStyle(color: Colors.green, fontSize: 26),
+              style: const TextStyle(color: Colors.green, fontSize: 24),
             ),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               ElevatedButton(
                 onPressed: _decrementCounter,
                 child: const Text("-",
-                    style: TextStyle(color: Colors.black, fontSize: 22)),
+                    style: TextStyle(color: Colors.black, fontSize: 20)),
                 style: ElevatedButton.styleFrom(primary: Colors.red),
               ),
               ElevatedButton(
                   onPressed: _incrementCounter,
                   style: ElevatedButton.styleFrom(primary: Colors.green),
                   child: const Text("+",
-                      style: TextStyle(color: Colors.black, fontSize: 22)))
+                      style: TextStyle(color: Colors.black, fontSize: 20)))
             ]),
 
             ElevatedButton(onPressed: _clearCounter,
               child: const Text("Сбросить",
-                  style: TextStyle(color: Colors.grey, fontSize: 18)),
+                  style: TextStyle(color: Colors.grey, fontSize: 16)),
               style: ElevatedButton.styleFrom(primary: Colors.white),),
           ],
         ),
